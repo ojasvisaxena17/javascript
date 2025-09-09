@@ -33,10 +33,43 @@ a = 0
 console.log(Boolean(a));
 
 a = "erte445"
+const myFunction = function(){
+    console.log("Hello world")
+}
+
  console.log(typeof a)
  console.log(Number(a)); //NaN 
  console.log(Number(d));
  //empty string converted to boolean gets false, value string gets true value.
  a = "Ojaasvi"
  console.log(Boolean(a));
- 
+ //primitive data types -
+ // string , number , boolean, null, undefined, symbol, BigInt  stores in stack. Copies the data
+
+ //non-primitive data types- stores in heap - creates reference
+ //Reference (non- primitive)
+//Array, Objects, Functions 
+
+//Arrays:
+const array = ["man","women","children"];
+let mobj = {
+    name : "ojasvi",
+    age : 22,
+}
+myFunction()
+
+let array2 = {
+    email : "ojasvi@yahoo.com",
+    name : "Shivankar"
+}
+let array1 = array2
+console.log(array1)
+console.log(array2)
+array2.email = "ojasvi@gmail.com"
+console.log(array2);
+console.log(array1)
+array1.email = " yahoo.com"
+console.log(array1); //both values change array1 and array2
+console.log(array2);
+
+
